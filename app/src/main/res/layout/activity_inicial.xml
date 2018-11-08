@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.practicafisica.Inicial"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"
+                    android:text="Bobina de Tesla"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La bobina de Tesla es un generador electromagnético que produce descargas de alta tensión de elevadas frecuencias con efectos observables, como manifestación de la existencia de campo eléctrico y magnético."
+                    android:textSize="21dp"
+                    android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/tesla"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorial"
+                    android:id="@+id/btn1"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18sp"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                    android:fontFamily="sans-serif-medium" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cálculos"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/btn2"
+                    android:textSize="18sp"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gráficas"
+                    android:id="@+id/btn3"
+                    android:textSize="18sp"
+                    style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
